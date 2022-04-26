@@ -1,0 +1,603 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/pexels-polina-zimmerman-3747473.jpg);
+    height: 100%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.ulN{
+    text-align: center;
+    font-size: 1.2rem;    
+    padding: 0.4rem;
+    background: linear-gradient(rgba(0,0,0,0.3 ), rgba(0,0,0,0.3));
+    border-radius: 0,0,0,10px;
+}
+
+li{
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin: 0.4rem;
+}
+
+a{
+    color: whitesmoke;
+}
+
+.bienvenidos{
+    margin: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(20, 20, 20);
+    color: #b9e6e6;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.section{
+    display: grid;
+    grid-template-areas:"parrafo1" 
+                        "videoNvidia"
+                        "parrafo2" 
+                        "videoIntel"
+                        ;
+}
+.divVideo1 .parrafo1 {
+    text-align: center;
+    
+}
+.divVideo2 .parrafo2 {
+    text-align: center;
+}
+.imgP{
+    display: grid;
+    justify-content: center;
+    grid-template-areas:"gabinete" 
+                        "impresora"
+                        "placadevideo" 
+                        "placamadre";
+}
+
+
+.gabinete, .impresora, .placadevideo, .placamadre {
+    background-color: whitesmoke;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.parrafo1{
+    margin: 1.5rem;
+}
+
+.parrafo2{
+    margin: 1.5rem;
+}
+
+.videoNvidia, .videoIntel{
+    width: 100%;
+    padding: 5px;
+    border-radius: 1rem;
+}
+h3{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: #000000;
+    background: linear-gradient(rgba(0,0,0,0.3 ), rgba(0,0,0,1));
+    border-radius: 0,0,0,10px;
+}
+
+
+
+@media only screen and (min-width: 650px){
+    .section{
+        display: grid;
+        grid-template-areas:"parrafo1 parrafo2"
+                            "videoNvidia videoIntel";
+    }
+    .ulN{
+        display: flex;
+        justify-content:end;
+        padding: 1.5rem; 
+    }
+    nav ul li{
+        font-size: 1.2rem;
+        border-radius: 1rem;
+        padding: 0.4rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .bienvenidos{
+        margin: 1.5rem;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        background-color: rgb(20, 20, 20);
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    
+    .logoK{
+        position: absolute;
+    }
+    
+    .divVideo1, .divVideo2{
+        text-align: center;
+    }
+    .videoNvidia,.videoIntel{
+        width: 90%;
+        border-radius: 1rem;  
+    }
+
+    nav ul li:hover{
+        
+        transform: scale(1.03);
+    }
+
+    .logoK:hover{
+        transform: scale(1.02);
+    }
+
+    .imgP{
+        display: grid;
+        justify-content: center;
+        padding: auto;
+        grid-template-areas:"gabinete impresora"
+                            "placadevideo placamadre";
+    }
+    .gabinete, .impresora, .placadevideo, .placamadre {
+        background-color: whitesmoke;
+        padding: 40px;
+        border-radius: 1rem;
+        
+    }
+    .gabinete2, .impresora2, .placadevideo2, .placamadre2{
+        margin: auto;
+    }
+
+    .gabinete2:hover, .impresora2:hover, .placadevideo2:hover, .placamadre2:hover{
+        transform: scale(1.1);
+    }
+
+    h4{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1050px){
+    .section{
+        display: grid;
+        grid-template-areas:"parrafo1 parrafo2"
+                            "videoNvidia videoIntel"
+                            
+    }
+
+    .logoK{
+        position: absolute;
+        border-radius: 1rem;
+        
+    }
+
+    nav ul li{
+        font-size: 1.5rem;        
+        margin: 0.3rem;
+    }
+    
+    .bienvenidos{
+        margin: 1.5rem;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        background-color: rgb(20, 20, 20);
+        color: #b9e6e6;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    main{
+        height: 100%;
+    }
+    h3{
+        padding: 1rem;
+    }
+
+
+    .videoIntel, .videoNvidia{
+        border-radius: 1rem;
+        width: 80%
+        
+    }
+    .imgP{
+        display: grid;
+        justify-content:center;
+        grid-template-areas:"gabinete impresora placadevideo placamadre";
+    }
+    .gabinete2, .impresora2, .placadevideo2, .placamadre2 {
+        background-color: whitesmoke;
+        border-radius: 1rem; 
+        width: 100%;
+    }
+
+    .gabinete, .impresora, .placadevideo, .placamadre {
+        background-color: whitesmoke;
+        border-radius: 1rem; 
+    }
+    
+
+    .gabinete2:hover, .impresora2:hover, .placadevideo2:hover, .placamadre2:hover{
+        transform: scale(1.1);
+    }
+    
+    h4{font-size: 1.3rem;
+        display: flex;
+        justify-content: right;
+        padding: 1rem;
+    }
+}
+
+/*Aca empieza la parte de productos*/
+
+.ulN2{
+    text-align: center;
+    font-size: 1.2rem;    
+    padding: 0.4rem;
+    background: linear-gradient(rgba(0,0,0,0.3 ), rgba(0,0,0,0.3));
+    border-radius: 0,0,0,10px;
+}
+
+li{
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin: 0.4rem;
+}
+
+
+.h1P{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.divP{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+.div1{
+    margin: 1rem;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.div1 .epson{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.gabHyper{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.div2{
+    margin: 1.4rem;
+}
+.gabNzxt{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.epson{
+    text-align: center;
+}
+
+.canon{
+    text-align: center;
+}
+.collar{
+    
+    border-radius: 0.4rem;
+}
+
+.gabineteNzxt, .gabineteHyper, .impresoraEpson, .impresoraCanon{
+    width: 180px;
+}
+.proximamente{
+    margin: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 650px){
+    .ulN2{
+        display: flex;
+        justify-content:end;
+        padding: 1.5rem;
+        
+    }
+    
+    .h2Gab{
+        font-size: 1.3rem;
+    }
+    .h3Imp{
+        font-size: 1.3rem;
+    }
+    .divP {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.3fr;
+        justify-content: space-around;
+    }
+    .gabHyper, .gabNzxt, .epson, .canon{
+        font-size: 1.1rem;
+        
+    }
+    .gabineteNzxt, .gabineteHyper, .impresoraEpson, .impresoraCanon{
+        width: 220px;
+    }
+    .gabineteNzxt:hover, .gabineteHyper:hover, .impresoraEpson:hover, .impresoraCanon:hover{
+        transform: scale(1.1);
+    }
+    .proximamente{
+        margin: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    h4{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+    .ulN2{
+        display: flex;
+        justify-content:end;
+        padding: 1.5rem;
+    }
+    nav ul li{
+        font-size: 1.5rem;        
+        margin: 0.3rem;
+    }
+    
+    .h2Gab{
+        font-size: 1.9rem;
+    }
+    .h3Imp{
+        font-size: 1.9rem;
+    }
+    .divP {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.3fr;
+    }
+    .gabHyper, .gabNzxt, .epson, .canon{
+        font-size: 1.7rem;
+    }
+    .gabineteNzxt, .gabineteHyper, .impresoraEpson, .impresoraCanon{
+        width: auto;
+    }
+    .proximamente{
+        margin: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+/*Aca comienza la parte de Registro*/
+
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+.logo span {
+    color: #a32424;
+}
+
+.registro {
+    
+    margin: 1rem;
+
+}
+
+.registroF {
+    background: #222222;
+    color:#fff;
+    padding: 20px;
+}
+
+.registroF form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.registroF form label {
+    display: block;
+}
+
+.registroF form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.registroF form .enviarR {
+    grid-column: 1/3;
+    
+}
+
+.registroF form button,.registroF form input,.registroF form textarea{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #a87f26;
+}
+
+.registroF form button {
+    background: #a87f26;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.registroF form button:hover,
+.registroF form button:focus {
+    background: #d6a130;
+    color: #fff;
+    outline: 0;
+}
+
+.infoRegistro {
+    background: #000;
+    color:#fff;
+    padding: 1.4rem;
+}
+
+.infoRegistro ul, .infoRegistro p {
+    text-align: center;
+    margin: 40px;
+}
+
+@media(min-width: 650px) {
+    .registro {
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+    }
+    .logo{
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+    .infoRegistro h4,
+    .infoRegistro ul,
+    .infoRegistro p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media(min-width: 1050px) {
+    .registro {
+        display: grid;
+        grid-template-columns: 3fr 1fr ;
+    }
+    .logo{
+        margin: 2rem;
+        font-size: 1.8rem;
+    }
+    .infoRegistro h4,
+    .infoRegistro ul,
+    .infoRegistro p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .h4C{
+        
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 2rem;
+    }
+}
+
+
+
+/*Aca comienza la parte de Ayuda*/
+
+
+.pAyuda{
+    background-color: whitesmoke;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    margin: 30px;
+    font-size: 20px;
+    border-style: solid;
+}
+
+.pInformacion{
+    text-align: center;
+    background-color: whitesmoke;
+    position: relative;
+    font-size: 20px;
+    margin: 100px;
+    border-style: solid;
+    padding: 10px;
+}
+.imagenRedes1, .imagenRedes2, .imagenRedes3{
+    width: 10%;
+}
+
+/*Aca comienza la parte de quienes somos*/
+
+.cConocenos{
+    text-align: center;
+    background-color: whitesmoke;
+    position: relative;
+    font-size: 30px;
+    top: 80px;
+    border-style: solid;
+}
+.pConocenos{
+    position: relative;
+    font-size: 20px;
+    background-color: whitesmoke;
+    left: 640px;
+    padding: 10px;
+    top: 120px;
+    width: 300px;
+    border-style: solid;
+    
+}
